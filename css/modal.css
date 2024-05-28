@@ -1,0 +1,14 @@
+.att-notes-list {
+    list-style: none;
+    font-size: 13px;
+    margin-top: .5em;
+}
+
+.att-notes span {
+    line-height: 1em;
+}
+
+.bug-description {
+    color: #b66604;
+    font-style: normal;
+}

@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-bg-color:#083263;
+    --main-font: 'Lato';
+    --second-color: #b66604;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font);
+}
+
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+    flex-direction: column;
+}
+
+.content-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.game-box {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid rgb(145, 142, 142);
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+.control-info {
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    background-color: rgb(46, 46, 46);
+    border: 1px solid rgb(107, 107, 107);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.232);
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.character-control {
+    color: #FFF;
+    text-align: center;
+}
+
+.navigation-menu ul {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+}
+
+.navigation-menu {
+    color: #FFF;
+}
+
+.navigation-menu a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Página de informações do Jogo - CSS */
+
+
+.generic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-message {
+    margin-top: 1em;
+}
+
+.about-message p {
+    text-align: justify;
+    font-size: .9em;
+}
+
+.content {
+    background-color: rgb(210, 210, 210);
+    border: 1px solid rgb(138 138 138);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.232);
+    color: #000000;
+    border-radius: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 1em;
+    width: 800px;
+}
+
+.about-title {
+    margin-bottom: 1em;
+    color: var(--second-color);
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+}
+
+.loader {
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid var(--second-color); 
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); };
+}
+
+/* Página de atualizações - CSS */
+
+.updates-container {
+    display: flex;
+    justify-content: center;
+}
+
+.updates-content {
+    border: 1px solid red;
+    width: 800px;
+}
+
+.update-information {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: .9em;
+}
+.card-update{
+    border: 1px solid rgb(165, 163, 163);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+.update-title {
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.update-date, .update-link-modal {
+    font-size: .8em;
+    line-height: 2em;
+}
+
+.update-link-modal {
+    text-decoration: none;
+    color: #626262;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    text-align: right;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.main-footer span {
+    color: #FFF;
+    font-size: 13px;
+}
+
+.main-footer a {
+    text-decoration: none;
+    color: var(--second-color);
+}

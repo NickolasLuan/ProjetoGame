@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="../css/modal.css">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <title>Atualizações</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/logo.png">
+            </a>
+        </div>
+        <nav class="navigation-menu">
+            <ul>
+                <li><a href="../index.html">Página Inicial</a></li>|
+                <li><a href="about.html">Sobre o jogo</a></li>|
+                <li><a href="updates.html">Atualizações</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+    <div class="generic-container">
+        <div class="content">
+            <div class="update-information" style="display: none;">
+                <span>Por aqui, você conseguirá acompanhar as atualizações já lançadas e saber mais detalhes.</span>
+            </div>
+            <div class="loading">
+                <div class="loader"></div> 
+            </div>
+            <div class="card-update" style="display: none;">
+                <span class="update-title">Versão 1.0</span>
+                <span class="update-date">Data: 27/05/2024</span>
+                <a href="modal.html?version=Versão 1.0" class="update-link-modal" data-version-id="Versão 1.0">Saber mais</a>
+            </div>
+            <div class="card-update" style="display: none;">
+                <span class="update-title">Versão Beta</span>
+                <span class="update-date">Data: 15/05/2024</span>
+                <a href="modal.html?version=Versão Beta" class="update-link-modal" data-version-id="Versão Beta">Saber mais</a>
+            </div>
+        </div>                        
+    </div>
+    
+    <div id="modal-content"></div>
+
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="../scriptsPage/script.js"></script>
+
+    <footer class="main-footer">
+        <span>Castle Adventure ©️ 2024 - Desenvolvido Por <a href="https://www.linkedin.com/in/nickolas-luan27/" target="_blank"> Nickolas Luan</a></span>
+    </footer>
+</body>
+</html>
